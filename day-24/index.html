@@ -41,8 +41,8 @@
     </header>
     <form action="" class="login-register hidden">
         <div class="login-register_btn">
-            <button class="login-btn active">Đăng Nhập</button>
-            <button class="register-btn">Đăng Ký</button>
+            <button type="button" class="login-btn active">Đăng Nhập</button>
+            <button type="button" class="register-btn">Đăng Ký</button>
         </div>
         <!-- login -->
         <div class="form-login">
@@ -62,14 +62,15 @@
                 </a>
             </div>
             <p class="or">hoặc</p>
+            <p class="not-exist error hidden">Account not existed.</p>
             <div class="login-form">
                 <label for="email">Email
-                    <input type="email" name="email" class="email" placeholder="Email">
-                    <p class="error hidden">Vui lòng nhập thông tin</p>
+                    <input type="email" name="email" class="email-login" placeholder="Email">
+                    <p class="error error-email-login hidden">Vui lòng nhập thông tin</p>
                 </label>
                 <label for="password">Mật khẩu
-                    <input type="password" name="password" class="password" placeholder="Mật khẩu">
-                    <p class="error hidden">Vui lòng nhập thông tin</p>
+                    <input type="password" name="password" class="password-login" placeholder="Mật khẩu">
+                    <p class="error error-password-login hidden">Vui lòng nhập thông tin</p>
                     <i class="fa-regular fa-eye"></i>
                     <i class="fa-regular fa-eye-slash hidden"></i>
                 </label>
@@ -82,16 +83,16 @@
             <p class="desc">Hoàn thành đăng ký, và bắt đầu trải nghiệm ngay!</p>
             <div class="register-form">
                 <label for="text">Họ và tên
-                    <input type="text" name="text" class="text" placeholder="Họ và tên">
-                    <p class="error hidden">Vui lòng nhập thông tin</p>
+                    <input type="text" name="text" class="text-register" placeholder="Họ và tên">
+                    <p class="error error-fullname-register hidden">Vui lòng nhập thông tin</p>
                 </label>
                 <label for="email">Email
-                    <input type="email" name="email" class="email" placeholder="Email">
-                    <p class="error hidden">Vui lòng nhập thông tin</p>
+                    <input type="email" name="email" class="email-register" placeholder="Email">
+                    <p class="error error-email-register hidden">Vui lòng nhập thông tin</p>
                 </label>
                 <label for="password">Mật khẩu
-                    <input type="password" name="password" class="password" placeholder="Mật khẩu">
-                    <p class="error hidden">Vui lòng nhập thông tin</p>
+                    <input type="password" name="password" class="password-register" placeholder="Mật khẩu">
+                    <p class="error error-password-register hidden">Vui lòng nhập thông tin</p>
                     <i class="fa-regular fa-eye"></i>
                     <i class="fa-regular fa-eye-slash hidden"></i>
                 </label>
