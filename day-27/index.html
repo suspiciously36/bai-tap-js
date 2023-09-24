@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .empty-cart-text {
+        display: none;
+      }
+      .empty-cart .empty-cart-text {
+        display: block;
+      }
+      .empty-cart table,
+      .empty-cart button,
+      .empty-cart hr {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>DANH SÁCH SẢN PHẨM</h2>
+    <table border="1" width="100%">
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th width="70%">Tên sản phẩm</th>
+          <th>Giá</th>
+          <th width="10%">Thêm vào giỏ</th>
+        </tr>
+      </thead>
+      <tbody id="items-body"></tbody>
+    </table>
+
+    <!--  -->
+
+    <h2>GIỎ HÀNG</h2>
+    <div id="cart">
+      <table border="1" width="100%">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+            <th>Xóa</th>
+          </tr>
+        </thead>
+
+        <tbody id="cart-body"></tbody>
+      </table>
+      <div class="empty-cart-text">Giỏ hàng không có sản phẩm nào</div>
+      <hr />
+      <button id="update-btn">Cập nhật giỏ hàng</button>
+      <button id="deleteAll-btn" onclick="deleteAll()">Xóa giỏ hàng</button>
+    </div>
+
+    <!--  -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
